@@ -1,12 +1,13 @@
-package br.com.desafio;
+package br.com.desafio.Model;
 
 import java.util.Map;
 
 public class MoedasDisponiveis {
     private String baseCode;
     private String targetCode;
-    private Double  conversionRate;
+    private Double conversionRate;
     private Map<String, Double> rates;
+    private Double valor;
 
     public MoedasDisponiveis() {}
 
@@ -45,12 +46,20 @@ public class MoedasDisponiveis {
         return rates;
     }
 
+    public Double getValor() {
+        return valor;
+    }
+
+    public void setValor(Double valor) {
+        this.valor = valor;
+    }
 
     @Override
     public String toString() {
-        return  "moeda1= " + baseCode + "\n"
-                + "moeda2= " + targetCode + "\n" +
-                "conversao= " + conversionRate + "\n" +
-                "lista de moedas= " + rates;
+        return "moeda1= " + baseCode + "\n"
+                + "moeda2= " + targetCode + "\n"
+                + "conversao= " + conversionRate + "\n"
+                + "lista de moedas= " + rates + "\n"
+                + "valor= " + valor;
     }
 }

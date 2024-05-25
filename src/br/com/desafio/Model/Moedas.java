@@ -1,4 +1,4 @@
-package br.com.desafio;
+package br.com.desafio.Model;
 
 import java.util.Map;
 
